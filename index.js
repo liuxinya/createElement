@@ -1,5 +1,4 @@
-import {createElement} from './src/createElement.js'
-
+import {createElement} from './src/jsxToElement.js'
 export {
-    createElement
+    createElement as jsxToElement
 }
