@@ -1,8 +1,12 @@
 {
   "name": "jsx-to-element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jsx解析成真实dom的一个工具",
-  "keywords": ["jsx", "dom", "element"],
+  "keywords": [
+    "jsx",
+    "dom",
+    "element"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
