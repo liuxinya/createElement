@@ -482,7 +482,6 @@ export function createElement(jsxNode) {
         });
     }
     childNodes.forEach((childNode) => {
-        // console.log(Object.prototype.toString.call(childNode), childNode);
         if (isObject(childNode)) {
             el.appendChild(createElement(childNode));
         } else if (isArray(childNode)) {
