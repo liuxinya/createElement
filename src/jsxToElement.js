@@ -464,6 +464,10 @@ export function createElement(jsxNode) {
         if (prop in attrs) {
             el.setAttribute(attrs[prop], props[prop]);
         }
+        // 考虑到自定义属性 data-
+        if (prop && /^(data-)/.test(prop)) {
+            el.setAttribute(prop, props[prop]);
+        }
         if (prop in EVENT_HANDLERS) {
             el.addEventListener(EVENT_HANDLERS[prop], props[prop]);
         }
